@@ -1,0 +1,30 @@
+﻿@model Pizzapan.EntityLayer.Concrete.Footers
+@{
+    ViewData["Title"] = "UpdateFooters";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Bilgi Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="FootersID" />
+    <label>Adres</label>
+    <input type="text" class="form-control" asp-for="Address" style="background-color:darkgray" />
+    <br />
+    <label>Mail</label>
+    <input type="text" class="form-control" asp-for="Email" style="background-color:darkgray" />
+    <br />
+    <label>Rezervasyon</label>
+    <input type="text" class="form-control" asp-for="ReservationContent" style="background-color:darkgray" />
+    <br />
+    <label>İletişim Numarası</label>
+    <input type="text" class="form-control" asp-for="TelephoneNumber" style="background-color:darkgray" />
+    <br />
+    <label>Çalışma Günleri (day-day)</label>
+    <input type="text" class="form-control" asp-for="WorkingDay" style="background-color:darkgray" />
+    <br />
+    <label>Çalışma Saati(pm-pm)</label>
+    <input type="text" class="form-control" asp-for="WorkingHours" style="background-color:darkgray" />
+    <br />
+    <button class="btn btn-primary">Güncelle</button>
+</form>

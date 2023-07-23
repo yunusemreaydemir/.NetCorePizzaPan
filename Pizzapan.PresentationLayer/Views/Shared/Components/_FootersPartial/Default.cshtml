@@ -1,0 +1,36 @@
+﻿@model List<Pizzapan.EntityLayer.Concrete.Footers>
+
+<section class="w3l-footers-20">
+    <div class="footers20">
+        <div class="container">
+            <div class="footers20-content">
+                @foreach (var item in Model)
+                {
+                    <div class="d-grid grid-col-4 grids-content">
+                        <div class="column">
+                            <h4>Adres</h4>
+                            <p class="contact-para3">@item.Address</p>
+                            <a href="mailto:hello@w3layouts.com">
+                                <p class="contact-mail mt-2">@item.Email</p>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <h4>Rezervasyon</h4>
+                            <p>@item.ReservationContent</p>
+                            <a href="tel:+1-2345-678-11">
+                                <p class="contact-phone mt-2">@item.TelephoneNumber</p>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <h4>Çalışma Saatlerimiz</h4>
+                            <p>@item.WorkingDay</p>
+                            <p class="mt-2">@item.WorkingHours</p>
+                        </div>
+                    </div>
+
+                }
+            
+            </div>
+        </div>
+    </div>
+</section>

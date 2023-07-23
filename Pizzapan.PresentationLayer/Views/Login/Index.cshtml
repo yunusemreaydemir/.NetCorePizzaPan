@@ -1,0 +1,114 @@
+﻿@{
+    Layout = null;
+}
+@*<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <br /><br />
+    <form method="post">
+        <label>Kullanıcı Adınız</label>
+        <input type="text" class="form-control" asp-for="Username" />
+        <br />
+        <label>Kullanıcı Adınız</label>
+        <input type="passwoWrd" class="form-control" asp-for="Password" />
+        <br />
+        <button class="btn btn-primary">Giriş Yap</button>
+    </form>
+</div>
+<a href="/Register/Index/" class="btn btn-outline-info">Kullanıcı Oluştur</a>*@
+
+
+<!--A Design by W3layouts
+   Author: W3layout
+   Author URL: http://w3layouts.com
+   License: Creative Commons Attribution 3.0 Unported
+   License URL: http://creativecommons.org/licenses/by/3.0/
+   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Giriş Paneli</title>
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script>
+        addEventListener("load", function () { setTimeout(hideURLbar, 0); }, false); function hideURLbar() { window.scrollTo(0, 1); }
+    </script>
+    <!-- Meta tags -->
+    <!--stylesheets-->
+    <link href="/web/css/style.css" rel='stylesheet' type='text/css' media="all">
+    <!--//style sheet end here-->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+</head>
+<body>
+    <div class="mid-class">
+        <div class="art-right-w3ls">
+            <h2>Giriş Yap</h2>
+            <form action="#" method="post">
+                <div class="main">
+                    <div class="form-left-to-w3l">
+                        <input type="text" name="Username" placeholder="Kullanıcı Adı" required="">
+                    </div>
+                    <div class="form-left-to-w3l ">
+                        <input type="password" name="Password" placeholder="Parola" required="">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="left-side-forget">
+                    <input type="checkbox" class="checked">
+                    <span class="remenber-me">Beni Hatırla </span>
+                </div>
+
+                <div class="clear"></div>
+                <div class="btnn">
+                    <button type="submit">Giriş Yap</button>
+                </div>
+            </form>
+            <div class="w3layouts_more-buttn">
+                <h3>
+                    Hesabın yok mu ?
+                    <a href="/Register/Index/">
+                        Buradan Kaydolun
+                    </a>
+                </h3>
+            </div>
+            <!-- popup-->
+            @*<div id="content1" class="popup-effect">
+            <div class="popup">
+            <!--login form-->
+            <div class="letter-w3ls">
+            <form action="#" method="post">
+            <div class="form-left-to-w3l">
+            <input type="text" name="Name" placeholder="Username" required="">
+            </div>
+            <div class="form-left-to-w3l">
+            <input type="text" name="Surname" placeholder="Surname" required="">
+            </div>
+            <div class="form-left-to-w3l">
+            <input type="text" name="Username" placeholder="Username" required="">
+            </div>
+            <div class="form-left-to-w3l">
+            <input type="email" name="Email" placeholder="Email" required="">
+            </div>
+            <div class="form-left-to-w3l">
+            <input type="password" name="Password" placeholder="Password" required="">
+            </div>
+            <div class="form-left-to-w3l margin-zero">
+            <input type="password" name="ConfirmPassword" placeholder="Confirm Password" required="">
+            </div>
+            <div class="btnn">
+            <button type="submit">Sign Up</button>
+            <br>
+            </div>
+            </form>
+            <div class="clear"></div>
+            </div>
+            <!--//login form-->
+            <a class="close" href="#">&times;</a>
+            </div>
+            </div>*@ @*register*@
+
+            <!-- //popup -->
+        </div>
+    </div>
+</body>
+</html>

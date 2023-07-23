@@ -1,0 +1,290 @@
+﻿@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+@await Component.InvokeAsync("_HeadPartial")
+
+<body>
+    <!--header-->
+    @await Component.InvokeAsync("_NavbarPartial")
+    <!--/header-->
+    <!-- Domain Modal -->
+    @await Component.InvokeAsync("_DomainPartial")
+    <!-- //Domain modal -->
+    @await Component.InvokeAsync("_FeaturePartial")
+    <!-- iphone home block -->
+    <!-- //iphone home block -->
+    <section class="w3l-block py-5">
+        <div class="container py-lg-5 py-md-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 align-self">
+                    <h3>Alevde ızgara ateşinin kralı ve en büyük Pizza zinciri.</h3>
+                    <p class="mt-md-4 mt-3 mb-0">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda perferendis in
+                        expedita hic sapiente! Aspernatur pariatur consequuntur suscipit placeat nemo!
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 align-self mt-md-0 mt-5">
+                    <h3>Farklı ve en sevilen lezzetlerin kombinasyonu.</h3>
+                    <p class="mt-md-4 mt-3 mb-0">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore reiciendis saepe
+                        enim odio laboriosam nostrum illo nesciunt repellat totam. Molestias.
+                    </p>
+                </div>
+                <div class="col-lg-4 mt-lg-0 mt-5">
+                    <img src="/pizzapan-starter/assets/images/a1.jpg" class="img-fluid radius-image" alt="image">
+                </div>
+            </div>
+        </div>
+    </section> @*choose what*@
+    <section class="w3l-portfolio-8 py-5">
+        <div class="portfolio-main py-lg-5 py-md-4">
+            <div class="container">
+                <div class="title-content text-center">
+                </div>
+                <div class="row galler-top mt-lg-5 mt-4">
+                    <div class="col-md-3 col-6 protfolio-item hover14 align-self">
+                        <a href="assets/images/g6.jpg" data-lightbox="example-set"
+                           data-title="lorem ipsum dolor sit amet">
+                            <figure>
+                                <img src="/pizzapan-starter/assets/images/g6.jpg" alt="product" class="img-fluid radius-image">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6 protfolio-item hover14">
+                        <a href="assets/images/g1.jpg" data-lightbox="example-set" class="mb-4"
+                           data-title="lorem ipsum dolor sit amet">
+                            <figure>
+                                <img src="/pizzapan-starter/assets/images/g1.jpg" alt="product" class="img-fluid radius-image">
+                            </figure>
+                        </a>
+                        <a href="assets/images/g2.jpg" data-lightbox="example-set"
+                           data-title="lorem ipsum dolor sit amet">
+                            <figure>
+                                <img src="/pizzapan-starter/assets/images/g2.jpg" alt="product" class="img-fluid radius-image">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6 protfolio-item hover14">
+                        <a href="assets/images/g3.jpg" data-lightbox="example-set" class="mb-4"
+                           data-title="lorem ipsum dolor sit amet">
+                            <figure>
+                                <img src="/pizzapan-starter/assets/images/g3.jpg" alt="product" class="img-fluid radius-image">
+                            </figure>
+                        </a>
+                        <a href="assets/images/g6.jpg" data-lightbox="example-set"
+                           data-title="lorem ipsum dolor sit amet">
+                            <figure>
+                                <img src="/pizzapan-starter/assets/images/g6.jpg" alt="product" class="img-fluid radius-image">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6 protfolio-item hover14 align-self">
+                        <a href="assets/images/g1.jpg" data-lightbox="example-set"
+                           data-title="lorem ipsum dolor sit amet">
+                            <figure>
+                                <img src="/pizzapan-starter/assets/images/g1.jpg" alt="product" class="img-fluid radius-image">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> @*pizzapan galeri*@
+    @await Component.InvokeAsync("_ProductPartial")
+
+    <!--/testimonials-->
+    @await Component.InvokeAsync("_TestimonialPartial") @*müşterilerimizin yorumları default*@
+    <!--//testimonials-->
+    <!-- footers 20 -->
+    @await Component.InvokeAsync("_FootersPartial")
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        &#10548;
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- /move top -->
+    </section>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="~/pizzapan-starter/assets/js/jquery-3.3.1.min.js"></script>
+
+    <!-- libhtbox -->
+    <script src="~/pizzapan-starter/assets/js/lightbox-plus-jquery.min.js"></script>
+
+
+    <script src="~/pizzapan-starter/assets/js/jquery.magnific-popup.min.js"></script>
+
+    <script src="~/pizzapan-starter/assets/js/counter.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+            $('.popup-with-move-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-slide-bottom'
+            });
+        });
+    </script>
+
+    <!-- testimonials owlcarousel -->
+    <script src="~/pizzapan-starter/assets/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-two').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                responsiveClass: true,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    480: {
+                        items: 1,
+                        nav: false
+                    },
+                    667: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for Testimonials-->
+    <!-- script for food-->
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    480: {
+                        items: 2,
+                        nav: true,
+                        margin: 20
+                    },
+                    769: {
+                        items: 3,
+                        nav: true,
+                        margin: 20
+                    },
+                    1280: {
+                        items: 4,
+                        nav: true,
+                        loop: true,
+                        margin: 25
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for food-->
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- disable body scroll which navbar is in active -->
+    <!--/MENU-JS-->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!--//MENU-JS-->
+    <script src="~/pizzapan-starter/assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+﻿@model Pizzapan.EntityLayer.Concrete.OurTeam
+@{
+    ViewData["Title"] = "UpdateOurTeam";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Ekip Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="OurTeamID" />
+    <label>Ad Soyad</label>
+    <input type="text" class="form-control" asp-for="NameSurname" style="background-color:darkgray" />
+    <br />
+    <label>Alt Başlık</label>
+    <input type="text" class="form-control" asp-for="SubTitle" style="background-color:darkgray" />
+    <br />
+    <label>Resim Url</label>
+    <input type="text" class="form-control" asp-for="ImageUrl" style="background-color:darkgray" />
+    <br />
+    <label>Twitter</label>
+    <input type="text" class="form-control" asp-for="Twitter" style="background-color:darkgray" />
+    <br />
+    <label>Facebook</label>
+    <input type="text" class="form-control" asp-for="Facebook" style="background-color:darkgray" />
+    <br />
+    <button class="btn btn-primary">Güncelle</button>
+</form>

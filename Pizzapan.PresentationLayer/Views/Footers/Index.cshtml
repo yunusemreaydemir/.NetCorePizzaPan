@@ -1,0 +1,33 @@
+﻿@model List<Pizzapan.EntityLayer.Concrete.Footers>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h1>Footer Bilgi Güncelleme</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Adres</th>
+        <th>Mail Adresi</th>
+        <th>Rezervasyon</th>
+        <th>Telefon Numarası</th>
+        <th>Çalışma Günleri</th>
+        <th>Çalışma Saatleri</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FootersID</td>
+            <td>@item.Address</td>
+            <td>@item.Email</td>
+            <td>@item.ReservationContent</td>
+            <td>@item.TelephoneNumber</td>
+            <td>@item.WorkingDay</td>
+            <td>@item.WorkingHours</td>
+            <td> <a href="/Footers/UpdateFooters/@item.FootersID" class="btn btn-outline-info">Güncelle</a></td>
+        </tr>
+    }
+</table>
+
